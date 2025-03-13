@@ -1,0 +1,21 @@
+[project]
+name = "echo-tool"
+version = "0.1.0"
+description = "A simple echo tool for naptha node"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "naptha-sdk",
+    "pydantic>=2.10.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["echo_tool*"]
+
+[tool.uv.sources]
+naptha-sdk = { git = "https://github.com/NapthaAI/naptha-sdk.git" }
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

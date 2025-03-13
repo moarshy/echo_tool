@@ -1,0 +1,7 @@
+[
+    {
+        "name": "echo_tool",
+        "module": {"name": "echo_tool"},
+        "node": {"ip": "localhost"}
+    }
+]
