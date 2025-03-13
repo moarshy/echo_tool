@@ -46,7 +46,7 @@ def run(module_run: Dict, *args, **kwargs) -> Union[List[Dict], Dict]:
             raise ValueError("tool parameter is required")
             
         if tool == "echo":
-            message = module_run.inputs.func_args.get("message")
+            message = module_run.inputs.func_args.get("arguments").get("message")
             if not message:
                 raise ValueError("message parameter is required for echo tool")
                 
