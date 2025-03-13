@@ -2,6 +2,9 @@
     {
         "name": "echo_tool",
         "module": {"name": "echo_tool"},
-        "node": {"ip": "localhost"}
+        "node": {"ip": "localhost"},
+        "config": {
+            "config_name": "tool_config_1"
+        }    
     }
 ]
