@@ -19,6 +19,7 @@ def run(module_run: Dict, *args, **kwargs) -> Union[List[Dict], Dict]:
     module_run.inputs = InputSchema(**module_run.inputs)
 
     logger.info(f"Running function: {module_run.inputs.func_name}")
+    logger.info(f"Input: {module_run.inputs}")
     
     if module_run.inputs.func_name == "list_tools":
         return [
